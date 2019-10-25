@@ -266,3 +266,27 @@ public int[] swapEnds(int[] nums) {
   }
 }
 
+/* 20 - Given an array of ints of odd length, look at the first, last, and middle values 
+in the array and return the largest. The array length will be a least 1. */
+
+public int maxTriple(int[] nums) {
+  
+  int first = nums[0];
+  int middle = nums[nums.length / 2];
+  int last = nums[nums.length-1];
+  int max = 0;
+  
+  if (nums.length == 1) {
+    return first;
+  }
+  if (first > middle && first > last) {
+    max = first;
+  }
+  else if (middle > first && middle > last) {
+   max = middle;
+  }
+  else {
+    max = last;
+  }
+  return max;
+}
