@@ -343,13 +343,13 @@ public int[] make2(int[] a, int[] b) {
     newArray[0] = b[0];
     newArray[1] = b[1];
   }
-  if (a.length > 1) {
+  else if (a.length == 1) {
+  newArray[0] = a[0];
+  newArray[1] = b[0];
+  }
+  else {
     newArray[0] = a[0];
     newArray[1] = a[1];
-  }
-  if(a.length == 1) {
-    newArray[0] = a[0];
-    newArray[1] = b[0];
   }
   return newArray;
 }
