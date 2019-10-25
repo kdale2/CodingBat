@@ -290,3 +290,26 @@ public int maxTriple(int[] nums) {
   }
   return max;
 }
+
+/* 21 - Given 2 int arrays, each length 2, return a new array 
+length 4 containing all their elements. */
+
+public int[] plusTwo(int[] a, int[] b) {
+  
+  int[] arr = new int[] {a[0], a[1], b[0], b[1]};
+  return arr;
+  
+}
+
+/* 22 - Given an int array of any length, return a new array of its first 2 elements. 
+If the array is smaller than length 2, use whatever elements are present. */
+
+public int[] frontPiece(int[] nums) {
+  if (nums.length <= 2) {
+    return nums;
+  }
+  else {
+    int[] arr = new int[] {nums[0], nums[1]};
+    return arr;
+  }
+}
