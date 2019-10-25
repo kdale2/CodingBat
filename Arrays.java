@@ -224,7 +224,7 @@ public int start1(int[] a, int[] b) {
   return ones;
 }
 
-/* 18- Given 2 int arrays, a and b, of any length, return a new array with the 
+/* 18 - Given 2 int arrays, a and b, of any length, return a new array with the 
 first element of each array. If either array is length 0, ignore that array. */
 
 public int[] front11(int[] a, int[] b) {
@@ -245,6 +245,24 @@ public int[] front11(int[] a, int[] b) {
   else {
     int[] arr= new int[] {a[0], b[0]};
     return arr;
+  }
+}
+
+/* 19 - Given an array of ints, swap the first and last elements in the array. 
+Return the modified array. The array length will be at least 1. */
+
+public int[] swapEnds(int[] nums) {
+  
+  if (nums.length == 1) {
+    return nums;
+  }
+  
+  else {
+    int temp;
+    temp = nums[0];
+    nums[0] = nums[nums.length-1];
+    nums[nums.length-1] = temp;
+    return nums;
   }
 }
 
